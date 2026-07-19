@@ -1,0 +1,59 @@
+:root {
+    --gold: #d4af37;
+    --dark: #050505;
+}
+
+body {
+    background-color: var(--dark);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container { text-align: center; }
+
+.main-logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    margin-bottom: 2rem;
+}
+
+.bio h1 { color: var(--gold); margin-bottom: 5px; }
+.bio p { color: #888; margin-bottom: 30px; font-size: 0.9rem; }
+
+/* Contenedor de iconos */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espacio entre iconos */
+    margin-top: 20px;
+}
+
+.icon-btn {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Efecto Hover (al pasar el mouse) */
+.icon-btn:hover {
+    background: var(--gold);
+    color: var(--dark);
+    transform: scale(1.2); /* Crece un 20% */
+    box-shadow: 0 0 25px var(--gold); /* Efecto brillo neón */
+}
